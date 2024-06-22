@@ -5,7 +5,7 @@ from flask import current_app
 
 from alembic import context
 
-# this is the Alembic Config object, which provides
+# this is the Alembic Config object, that provides
 # access to the values within the .ini file in use.
 config = context.config
 
@@ -32,7 +32,7 @@ def get_engine_url():
         return str(get_engine().url).replace('%', '%%')
 
 
-# add your model's MetaData object here
+# adding the model's MetaData object here
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
