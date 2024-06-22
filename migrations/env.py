@@ -5,11 +5,11 @@ from flask import current_app
 
 from alembic import context
 
-# this is the Alembic Config object, that provides
+# this is the Alembic Config object, that will provides
 # access to the values within the .ini file in use.
 config = context.config
 
-# Interpret the config file for Python logging.
+# Interpret the config file for Python logging in.
 # This line sets up loggers basically.
 fileConfig(config.config_file_name)
 logger = logging.getLogger('alembic.env')
